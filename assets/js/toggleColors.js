@@ -81,6 +81,10 @@ function makeDark(){
     bodyElement.style.setProperty('--horizontalRule', "rgba(255, 255, 255, 0.15)");
     bodyElement.style.setProperty('--inputBackground', "rgba(255, 255, 255, 0.07)");
     bodyElement.style.setProperty('--tooltip', "#000");
+    bodyElement.style.setProperty('--card-background', "#222831");
+    bodyElement.style.setProperty('--card-header', "#fff");
+    bodyElement.style.setProperty('--card-subtitle', "#eeeeee");
+    bodyElement.style.setProperty('--card-text', "#D0DFE6");
 }
 
 function makeLight(){
@@ -101,4 +105,8 @@ function makeLight(){
     bodyElement.style.setProperty('--horizontalRule', "");
     bodyElement.style.setProperty('--inputBackground', "");
     bodyElement.style.setProperty('--tooltip', "lightgrey");
+    bodyElement.style.setProperty('--card-background', "");
+    bodyElement.style.setProperty('--card-header', "");
+    bodyElement.style.setProperty('--card-subtitle', "");
+    bodyElement.style.setProperty('--card-text', "");
 }
