@@ -224,6 +224,19 @@
   }
 }
 
+.card-data.barclays {
+  &:hover {
+    background: var(--barclays);
+
+    svg {
+      fill: #fff;
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
+}
+
 .coep {
   svg {
     path {
