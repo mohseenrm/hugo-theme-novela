@@ -35,6 +35,10 @@ function makeDark(){
     be.style.setProperty('--horizontalRule', "rgba(255, 255, 255, 0.15)");
     be.style.setProperty('--inputBackground', "rgba(255, 255, 255, 0.07)");
     be.style.setProperty('--tooltip', "#000");
+    be.style.setProperty('--card-background', "#222831");
+    be.style.setProperty('--card-header', "#fff");
+    be.style.setProperty('--card-subtitle', "#eeeeee");
+    be.style.setProperty('--card-text', "#D0DFE6");
 }
 
 function makeLight(){
@@ -55,4 +59,8 @@ function makeLight(){
     be.style.setProperty('--horizontalRule', "");
     be.style.setProperty('--inputBackground', "");
     be.style.setProperty('--tooltip', "lightgrey");
+    be.style.setProperty('--card-background', "");
+    be.style.setProperty('--card-header', "");
+    be.style.setProperty('--card-subtitle', "");
+    be.style.setProperty('--card-text', "");
 }
