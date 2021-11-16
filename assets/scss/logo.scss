@@ -18,3 +18,12 @@
         display: block;
     }
 }
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+
+    path#second-m {
+        fill: var(--primary);
+    }
+}
