@@ -219,10 +219,10 @@ img {
 }
 
 ::selection {
-  background: #39e0cf; /* WebKit/Blink Browsers */
+  background: var(--mint-green); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #39e0cf; /* Gecko Browsers */
+  background: var(--mint-green); /* Gecko Browsers */
 }
 
 @-webkit-keyframes image-load-in {
