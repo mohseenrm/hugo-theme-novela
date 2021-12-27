@@ -40,7 +40,7 @@ function makeDark(){
     be.style.setProperty('--card-header', "#fff");
     be.style.setProperty('--card-subtitle', "#eeeeee");
     be.style.setProperty('--card-text', "#D0DFE6");
-    be.style.setProperty('--highlight-block', "#3d93bb");
+    be.style.setProperty('--highlight-block', "#0db0a0");
 }
 
 function makeLight(){

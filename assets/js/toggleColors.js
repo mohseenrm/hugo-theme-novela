@@ -86,7 +86,7 @@ function makeDark(){
     bodyElement.style.setProperty('--card-header', "#fff");
     bodyElement.style.setProperty('--card-subtitle', "#eeeeee");
     bodyElement.style.setProperty('--card-text', "#D0DFE6");
-    bodyElement.style.setProperty('--highlight-block', "#3d93bb");
+    bodyElement.style.setProperty('--highlight-block', "#0db0a0");
 }
 
 function makeLight(){
