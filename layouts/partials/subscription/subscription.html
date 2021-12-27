@@ -1,13 +1,13 @@
-{{ $email := . }}
-{{ $action := printf "https://formspree.io/%s.tld" $email }}
+{{ $formId := . }}
+{{ $action := printf "https://formspree.io/f/%s" $formId }}
 <section id="subscriptionSection" class="section narrow">
     <div class="subscription-container">
         <div class="subscription-content">
             <h3 class="subscription-heading">
-                Join our email list and get notified about new content
+                Join the email list and get notified about new content
             </h3>
             <p class="subscription-text">
-                Be the first to receive our latest content with the ability to
+                Be the first to receive latest content with the ability to
                 opt-out at anytime. We promise to not spam your inbox or share your
                 email with any third parties.
             </p>

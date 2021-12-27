@@ -1,98 +1,98 @@
-.subscription-container{
+.subscription-container {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding: 64px 0 55px;
     margin: 10px auto 100px;
     background: var(--card);
     -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
-            box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
     z-index: 1;
 
-    .subscroiption-text{
+    .subscroiption-text {
         margin-left: 0;
         margin-right: 0;
     }
 }
 
 /*TABLET*/
-@media screen and (max-width: 735px){
-    .subscription-container{
+@media screen and (max-width: 735px) {
+    .subscription-container {
         padding: 50px 0 0;
         text-align: center;
 
-        .submitted-input{
+        .submitted-input {
             max-width: calc(100% - 36px);
         }
 
-        .submit-button{
+        .submit-button {
             position: relative;
             width: 100%;
             left: 0;
             border-radius: 0;
             height: 60px;
             border: none;
-            border-top: 1px solid var(--theme-ui-colors-horizontalRule,rgba(8,8,11,0.15));
+            border-top: 1px solid var(--theme-ui-colors-horizontalRule, rgba(8, 8, 11, 0.15));
         }
 
-        .submitted-form{
-            .submit-button{
+        .submitted-form {
+            .submit-button {
                 border: none !important;
-                border-top: 1px solid var(--theme-ui-colors-horizontalRule,rgba(8,8,11,0.15)) !important;
+                border-top: 1px solid var(--theme-ui-colors-horizontalRule, rgba(8, 8, 11, 0.15)) !important;
             }
         }
     }
 }
 
 /*PHABLET*/
-@media screen and (max-width: 540px){
-    .subscription-container{
+@media screen and (max-width: 540px) {
+    .subscription-container {
         margin: -20px auto 80px;
     }
 }
 
-.subscription-content{
+.subscription-content {
     margin: 0 auto;
     width: 100%;
     max-width: 640px;
 }
 
 /*TABLET*/
-@media screen and (max-width: 735px){
-    .subscription-content{
-        h3{
+@media screen and (max-width: 735px) {
+    .subscription-content {
+        h3 {
             padding: 0 50px;
         }
     }
 }
 
 /*PHONE*/
-@media screen and (max-width: 376px){
-    .subscription-content{
+@media screen and (max-width: 376px) {
+    .subscription-content {
         h3 {
             padding: 0 24px;
         }
     }
 }
 
-.subscription-heading{
+.subscription-heading {
     font-family: var(--serif);
     margin-bottom: 20px;
 }
 
 /*TABLET*/
-@media screen and (max-width: 735px){
-    .subscription-heading{
+@media screen and (max-width: 735px) {
+    .subscription-heading {
         margin-bottom: 15px;
     }
 }
 
-.subscription-text{
+.subscription-text {
     margin: 0 0 30px;
     max-width: 680px;
     color: var(--grey);
@@ -100,14 +100,14 @@
 }
 
 /*TABLET*/
-@media screen and (max-width: 735px){
-    .subscription-text{
+@media screen and (max-width: 735px) {
+    .subscription-text {
         padding: 0 26px;
         margin: 0 auto 25px;
     }
 }
 
-.subscription-form{
+.subscription-form {
     position: relative;
 }
 
@@ -120,14 +120,14 @@
 }
 
 /*TABLET*/
-@media screen and (max-width: 735px){
-    .subscription-form:after{
+@media screen and (max-width: 735px) {
+    .subscription-form:after {
         left: 34px;
         top: 11px;
     }
 }
 
-.subscription-input{
+.subscription-input {
     position: relative;
     border-radius: 35px;
     border: none;
@@ -137,20 +137,20 @@
     background-color: var(--inputBackground);
 }
 
-.subscription-input.submitted-input:invalid{
+.subscription-input.submitted-input:invalid {
     position: relative;
-    background: var(--theme-ui-colors-errorBackground,rgba(238,86,91,0.1)) !important;
+    background: var(--theme-ui-colors-errorBackground, rgba(238, 86, 91, 0.1)) !important;
     border-radius: 35px;
     border: none;
     padding: 13px 21px 13px 35px;
     width: 471px;
-    color: var(--primary,#000);
+    color: var(--primary, #000);
     outline: none !important;
 }
 
 input:invalid {
-    -webkit-box-shadow:0 0 2px 1px transparent;
-            box-shadow:0 0 2px 1px transparent;
+    -webkit-box-shadow: 0 0 2px 1px transparent;
+    box-shadow: 0 0 2px 1px transparent;
 }
 
 input:focus,
@@ -160,24 +160,24 @@ button:focus {
     outline: none;
 }
 
-.subscription-input.submitted-input:invalid ~ .subscription-error-message{
+.subscription-input.submitted-input:invalid~.subscription-error-message {
     opacity: 1;
 }
 
-.subscription-input.submitted-input:invalid ~ .submit-button{
+.subscription-input.submitted-input:invalid~.submit-button {
     color: var(--error);
     border: 1px solid var(--error);
 }
 
-.submitted-form:after{
+.submitted-form:after {
     color: var(--error);
 }
 
-.subscription-error-message{
+.subscription-error-message {
     position: absolute;
     left: 35px;
     bottom: -20px;
-    color: var(--theme-ui-colors-error,#EE565B);
+    color: var(--theme-ui-colors-error, #EE565B);
     font-size: 12px;
     opacity: 0;
 }
@@ -216,8 +216,8 @@ button:focus {
 }
 
 /*TABLET*/
-@media screen and (max-width: 735px){
-    .subscription-input{
+@media screen and (max-width: 735px) {
+    .subscription-input {
         width: calc(100% - 36px);
         margin: 0 18px;
         padding: 14px 14px 14px 30px;
@@ -225,9 +225,10 @@ button:focus {
     }
 }
 
-.submit-button{
-    border: 1px solid var(--accent);
+.submit-button {
+    border: 1.5px solid var(--accent);
     color: var(--accent);
+    background: var(--card);
     position: absolute;
     left: 306px;
     top: 3px;
@@ -235,22 +236,27 @@ button:focus {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 161px;
     height: 38px;
     font-weight: 600;
     border-radius: 35px;
     letter-spacing: 0.42px;
     -webkit-transition: border-color 0.2s var(--ease-in-out-quad),
-      background 0.2s var(--ease-in-out-quad), color 0.2s var(--ease-in-out-quad);
+        background 0.2s var(--ease-in-out-quad), color 0.2s var(--ease-in-out-quad);
     -o-transition: border-color 0.2s var(--ease-in-out-quad),
-      background 0.2s var(--ease-in-out-quad), color 0.2s var(--ease-in-out-quad);
+        background 0.2s var(--ease-in-out-quad), color 0.2s var(--ease-in-out-quad);
     transition: border-color 0.2s var(--ease-in-out-quad),
-      background 0.2s var(--ease-in-out-quad), color 0.2s var(--ease-in-out-quad);
+        background 0.2s var(--ease-in-out-quad), color 0.2s var(--ease-in-out-quad);
+
+    &:hover {
+        background: var(--accent);
+        color: var(--card);
+    }
 }
 
 .submit-button:disabled {
@@ -261,7 +267,7 @@ button:focus {
     fill: var(--background-color);
 }
 
-.submit-error{
+.submit-error {
     position: absolute;
     left: 35px;
     bottom: -20px;
@@ -275,8 +281,8 @@ button:focus {
 }
 
 /*TABLET*/
-@media screen and (max-width: 735px){
-    .submit-error{
+@media screen and (max-width: 735px) {
+    .submit-error {
         left: 50px;
         top: 50px;
     }
