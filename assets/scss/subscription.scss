@@ -60,6 +60,7 @@
     margin: 0 auto;
     width: 100%;
     max-width: 640px;
+    text-align: left;
 }
 
 /*TABLET*/
@@ -81,7 +82,7 @@
 }
 
 .subscription-heading {
-    font-family: var(--serif);
+    font-family: var(--serif-light-italic);
     margin-bottom: 20px;
 }
 
@@ -116,7 +117,7 @@
     content: "•";
     position: absolute;
     left: 21px;
-    top: 12px;
+    top: 14px;
 }
 
 /*TABLET*/
@@ -135,6 +136,7 @@
     width: 471px;
     color: var(--primary);
     background-color: var(--inputBackground);
+    font-family: var(--sanserif);
 }
 
 .subscription-input.submitted-input:invalid {
@@ -231,7 +233,7 @@ button:focus {
     background: var(--card);
     position: absolute;
     left: 306px;
-    top: 3px;
+    top: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -252,6 +254,8 @@ button:focus {
         background 0.2s var(--ease-in-out-quad), color 0.2s var(--ease-in-out-quad);
     transition: border-color 0.2s var(--ease-in-out-quad),
         background 0.2s var(--ease-in-out-quad), color 0.2s var(--ease-in-out-quad);
+
+    font-family: var(--serif-heavy-italic);
 
     &:hover {
         background: var(--accent);

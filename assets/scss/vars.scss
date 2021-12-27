@@ -12,8 +12,14 @@ body{
     // TODO: look for good fonts from adobe fonts
     // https://www.typewolf.com/adobe-fonts
     --serif: "Futura", "Merriweather", Georgia, Serif;
-    --sanserif: acumin-pro, "Nunito Sans", "SF Pro Display", "-apple-system", "BlinkMacSystemFont", "San Francisco", "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto", "Segoe UI", "Arial", sans-serif;
+    --sanserif: "Nunito Sans", "SF Pro Display", "-apple-system", "BlinkMacSystemFont", "San Francisco", "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto", "Segoe UI", "Arial", sans-serif;
     --monospace: "Operator Mono", Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
+
+    --serif-bold-italic: "Futura BI", --serif;
+    --serif-light-italic: "Futura LC", --serif;
+    --serif-medium-italic: "Futura MI", --serif;
+    --serif-heavy-italic: "Futura HI", --serif;
+    --serif-light: "Futura L", --serif;
 
     /*COLOR MODE TRANSITION*/
     --color-mode-transition: background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad);
