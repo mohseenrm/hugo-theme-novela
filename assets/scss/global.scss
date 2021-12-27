@@ -39,7 +39,7 @@
 }
 
 @font-face {
-  font-family: acumin-pro, "Nunito Sans", "-apple-system", "BlinkMacSystemFont", "San Francisco",
+  font-family: "Nunito Sans", "-apple-system", "BlinkMacSystemFont", "San Francisco",
     "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto", "Segoe UI",
     "Arial", sans-serif;
   font-weight: 400;
@@ -69,7 +69,7 @@
 }
 
 body {
-  font-family: "-apple-system", "BlinkMacSystemFont", "San Francisco",
+  font-family: "Nunito Sans", "-apple-system", "BlinkMacSystemFont", "San Francisco",
     "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto", "Segoe UI",
     "Arial", sans-serif;
   font-size: 1.6rem;
@@ -101,7 +101,7 @@ input,
 textarea,
 select,
 button {
-  font-family: "-apple-system", "BlinkMacSystemFont", "San Francisco",
+  font-family: "Nunito Sans", "-apple-system", "BlinkMacSystemFont", "San Francisco",
     "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto", "Segoe UI",
     "Arial", sans-serif;
 }
@@ -216,6 +216,13 @@ img {
   animation-name: image-load-in;
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
+}
+
+::selection {
+  background: #39e0cf; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #39e0cf; /* Gecko Browsers */
 }
 
 @-webkit-keyframes image-load-in {

@@ -8,6 +8,11 @@
   // -ms-flex-basis: 50%;
   // flex-basis: 50%;
   text-decoration: none;
+
+  & h4 {
+    font-family: var(--sanserif);
+    font-weight: 400;
+  }
 }
 
 .card-data {
@@ -152,6 +157,8 @@
   flex-grow: 2;
   margin-left: 2rem;
   letter-spacing: 2px;
+  font-family: var(--serif);
+  font-weight: 400;
 }
 
 .card-data.twilio {
