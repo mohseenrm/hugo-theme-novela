@@ -76,6 +76,27 @@
     }
 }
 
+.hero-subheading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  font-family: var(--serif);
+  line-height: 1.2;
+  color: var(--primary);
+  margin: 0;
+  margin-top: 8px;
+
+  /*DESKTOP*/
+  @media screen and (max-width: $desktop){
+    font-size: 28px
+  }
+
+  /*PHABLET*/
+  @media screen and (max-width: $phablet){
+    font-size: 22px;
+  }
+}
+
 .grid-button{
     position: relative;
     display: -webkit-box;

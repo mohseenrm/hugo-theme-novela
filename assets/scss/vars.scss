@@ -11,7 +11,7 @@ body{
     /*FONTS*/
     // TODO: look for good fonts from adobe fonts
     // https://www.typewolf.com/adobe-fonts
-    --serif: "Futura", "Merriweather", Georgia, Serif;
+    --serif: "Futura Md", "Merriweather", Georgia, Serif;
     --sanserif: "Nunito Sans", "SF Pro Display", "-apple-system", "BlinkMacSystemFont", "San Francisco", "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto", "Segoe UI", "Arial", sans-serif;
     --monospace: "Operator Mono", Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
 
@@ -19,6 +19,7 @@ body{
     --serif-light-italic: "Futura LC", --serif;
     --serif-medium-italic: "Futura MI", --serif;
     --serif-heavy-italic: "Futura HI", --serif;
+    --serif-regular: "Futura Md", --serif;
     --serif-light: "Futura L", --serif;
 
     /*COLOR MODE TRANSITION*/
