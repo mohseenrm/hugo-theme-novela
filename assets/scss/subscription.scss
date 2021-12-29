@@ -7,7 +7,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 64px 0 55px;
+    padding: 55px 0 55px;
     margin: 10px auto 100px;
     background: var(--card);
     -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
@@ -20,10 +20,16 @@
     }
 }
 
+@media screen and (max-width: $tablet_pro) {
+    .subscription-content {
+        max-width: 500px;
+    }
+}
+
 /*TABLET*/
-@media screen and (max-width: 735px) {
+@media screen and (max-width: $tablet) {
     .subscription-container {
-        padding: 50px 0 0;
+        padding: 50px 0px;
         text-align: center;
 
         .submitted-input {
@@ -50,7 +56,7 @@
 }
 
 /*PHABLET*/
-@media screen and (max-width: 540px) {
+@media screen and (max-width: $phablet) {
     .subscription-container {
         margin: -20px auto 80px;
     }
@@ -64,7 +70,7 @@
 }
 
 /*TABLET*/
-@media screen and (max-width: 735px) {
+@media screen and (max-width: $tablet) {
     .subscription-content {
         h3 {
             padding: 0 50px;
@@ -73,7 +79,7 @@
 }
 
 /*PHONE*/
-@media screen and (max-width: 376px) {
+@media screen and (max-width: $phone) {
     .subscription-content {
         h3 {
             padding: 0 24px;
@@ -87,7 +93,7 @@
 }
 
 /*TABLET*/
-@media screen and (max-width: 735px) {
+@media screen and (max-width: $tablet) {
     .subscription-heading {
         margin-bottom: 15px;
     }
@@ -101,7 +107,7 @@
 }
 
 /*TABLET*/
-@media screen and (max-width: 735px) {
+@media screen and (max-width: $tablet) {
     .subscription-text {
         padding: 0 26px;
         margin: 0 auto 25px;
@@ -121,7 +127,7 @@
 }
 
 /*TABLET*/
-@media screen and (max-width: 735px) {
+@media screen and (max-width: $tablet) {
     .subscription-form:after {
         left: 34px;
         top: 11px;
@@ -285,7 +291,7 @@ button:focus {
 }
 
 /*TABLET*/
-@media screen and (max-width: 735px) {
+@media screen and (max-width: $tablet) {
     .submit-error {
         left: 50px;
         top: 50px;
