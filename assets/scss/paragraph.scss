@@ -15,15 +15,22 @@ p b {
     font-weight: 800;
 }
 
-/*DESKTOP*/
-@media screen and (max-width: 1070px){
+
+/*TABLET PRO*/
+@media screen and (max-width: $desktop){
     p{
-        max-width: 507px;
+        max-width: 650px;
     }
 }
 
+// @media screen and (min-device-width: $tablet) and (max-device-width: 1000px){
+//     p{
+//         max-width: 550px;
+//     }
+// }
+
 /*TABLET*/
-@media screen and (max-width: 735px){
+@media screen and (max-width: $tablet){
     p{
         max-width: 486px;
         margin: 0 auto 25px;
@@ -31,7 +38,7 @@ p b {
 }
 
 /*PHABLET*/
-@media screen and (max-width: 540px){
+@media screen and (max-width: $phablet){
     p{
         padding: 0 20px;
     }

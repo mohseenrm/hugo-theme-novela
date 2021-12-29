@@ -12,8 +12,24 @@
         </header>
         {{/*  TODO: add attributes for desktop, tablet and mobile images  */}}
         {{ with .Page.Params.hero }}
+        <!-- <div class="article-hero-image" id="ArticleImage__Hero">
+            <img src="{{ .preview }}">
+        </div> -->
+
         <div class="article-hero-image" id="ArticleImage__Hero">
-            <img src="{{ . }}">
+            <picture>
+                <source srcset="{{ .desktop }}" media="(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 192dpi)">
+                <source srcset="{{ .desktop }}" media="(min-width: 1280px)">
+                <source srcset="{{ .tablet }}" media="(min-width: 735px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 735px) and (min-resolution: 192dpi)">
+                <source srcset="{{ .tablet }}" media="(min-width: 735px)">
+                <source srcset="818x434.jpg" media="(min-width: 540px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 540px) and (min-resolution: 192dpi)">
+                <source srcset="{{ .tablet }}" media="(min-width: 540px)">
+                <source srcset="{{ .mobile }}" media="(min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 320px) and (min-resolution: 192dpi)">
+                <source srcset="{{ .mobile }}" media="(min-width: 320px)">
+                <source srcset="{{ .mobile }}" media="(min-width: 0px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 0px) and (min-resolution: 192dpi)">
+                <source srcset="{{ .mobile }}" media="(min-width: 0px)">
+                <img src="{{ .fallback }}" alt="" >
+            </picture>
         </div>
         {{ end }}
     </div>
