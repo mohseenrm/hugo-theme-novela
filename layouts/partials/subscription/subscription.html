@@ -1,5 +1,4 @@
-{{ $formId := . }}
-{{ $action := printf "https://formspree.io/f/%s" $formId }}
+{{ $formId := . }} {{ $action := printf "https://formspree.io/f/%s" $formId }}
 <section id="subscriptionSection" class="section narrow">
     <div class="subscription-container">
         <div class="subscription-content">
@@ -7,25 +6,16 @@
                 Join the email list and get notified about new content
             </h3>
             <p class="subscription-text">
-                Be the first to receive latest content with the ability to
-                opt-out at anytime. <br />
-                We promise to not spam your inbox or share your
-                email with any third parties.
+                Be the first to receive latest content with the ability to opt-out at
+                anytime. <br />
+                We promise to not spam your inbox or share your email with any third
+                parties.
             </p>
             <form id="subscriptionForm" class="subscription-form" action="{{ $action | safeHTMLAttr }}" method="POST">
-                <input
-                  id="emailInput"
-                  class="subscription-input"
-                  placeholder="your@email.com"
-                  name="email"
-                  type="email"
-                  required
-                  pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
-                />
-                <button id="submitButton"
-                  class="submit-button"
-                  type="submit"
-                >
+                <input id="emailInput" class="subscription-input" placeholder="your@email.com" name="email" type="email"
+                    required
+                    pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" />
+                <button id="submitButton" class="submit-button" type="submit">
                     Subscribe
                 </button>
                 <div class="subscription-error-message">
