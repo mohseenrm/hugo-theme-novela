@@ -18,6 +18,7 @@
         margin-left: 0;
         margin-right: 0;
     }
+
 }
 
 /*TABLET*/
@@ -46,6 +47,15 @@
                 border-top: 1px solid var(--theme-ui-colors-horizontalRule, rgba(8, 8, 11, 0.15)) !important;
             }
         }
+    }
+}
+
+/*TABLET*/
+@media screen and (min-width: $phone_small) and (max-width: $phablet) {
+    .subscription-container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border-radius: 4px;
     }
 }
 
