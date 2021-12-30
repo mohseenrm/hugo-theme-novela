@@ -20,12 +20,6 @@
     }
 }
 
-@media screen and (max-width: $tablet_pro) {
-    .subscription-content {
-        max-width: 500px;
-    }
-}
-
 /*TABLET*/
 @media screen and (max-width: $tablet) {
     .subscription-container {
@@ -67,6 +61,9 @@
     width: 100%;
     max-width: 640px;
     text-align: left;
+    @media screen and (max-width: $tablet_pro) {
+        max-width: 500px;
+    }
 }
 
 /*TABLET*/

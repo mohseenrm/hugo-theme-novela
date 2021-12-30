@@ -462,6 +462,11 @@
 .post-content {
     padding: 26vh 0 35px;
 
+    /* Desktop 4K */
+    @media screen and (min-width: $desktop_4k) {
+        padding: 20vh 0 35px;
+    }
+
     /*TABLET*/
     @media screen and (max-width: $desktop) {
         padding-top: 4vh;
