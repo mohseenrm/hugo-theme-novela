@@ -31,6 +31,11 @@
   // font-family: 'Open Sans', sans-serif;
   width: 100%;
 
+  /* Phones */
+  @media screen and (max-width: $phablet) {
+    padding: 1rem 2rem;
+  }
+
   h3 {
     color: var(--card-header);
     font-size: 4rem;
@@ -42,6 +47,12 @@
     display: inline-flex;
     align-items: center;
     width: 100%;
+
+    /* Phones */
+    @media screen and (max-width: $phablet) {
+      font-size: 4rem;
+      margin-top: 0px;
+    }
   }
 
   h4 {
@@ -65,12 +76,24 @@
     transform: translateY(1.5rem);
     transition: opacity 0.45s ease, transform 0.5s ease;
     width: 100%;
+
+    /* Phones */
+    @media screen and (max-width: $phablet) {
+      padding: 0px;
+      font-size: 1.5rem;
+    }
   }
 
   svg {
     max-height: 100px;
     max-width: 100px;
     transition: fill 0.45s ease;
+
+    /* Phones */
+    @media screen and (max-width: $phablet) {
+      max-width: 75px;
+      max-height: 75px;
+    }
   }
 
   .link-text {
@@ -83,6 +106,12 @@
     transition: color 0.45s ease;
 
     margin-top: 1rem;
+
+    /* Phones */
+    @media screen and (max-width: $phablet) {
+      margin: 1.5rem 0 1rem 0;
+      font-size: 1.7rem;
+    }
 
     svg {
       margin-left: 0.5em;
@@ -254,4 +283,18 @@
 
 .card.card-md {
   flex-basis: 50%;
+
+  /* Phones */
+  @media screen and (max-width: $phablet) {
+    flex-basis: 100%;
+
+    & svg {
+      display: none;
+    }
+  }
+
+  /* Tablets */
+  @media screen and (max-width: $tablet_pro) {
+    flex-basis: 100%;
+  }
 }
