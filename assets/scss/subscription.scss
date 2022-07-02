@@ -1,306 +1,311 @@
 .subscription-container {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 55px 0 55px;
-    margin: 10px auto 100px;
-    background: var(--card);
-    -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
-    z-index: 1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 55px 0 55px;
+  margin: 10px auto 100px;
+  background: var(--card);
+  -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+  z-index: 1;
 
-    .subscroiption-text {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
+  .subscroiption-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 /*TABLET*/
 @media screen and (max-width: $tablet) {
-    .subscription-container {
-        padding: 50px 0px;
-        text-align: center;
+  .subscription-container {
+    padding: 50px 0px;
+    text-align: center;
 
-        .submitted-input {
-            max-width: calc(100% - 36px);
-        }
-
-        .submit-button {
-            position: relative;
-            width: 100%;
-            left: 0;
-            border-radius: 0;
-            height: 60px;
-            border: none;
-            border-top: 1px solid var(--theme-ui-colors-horizontalRule, rgba(8, 8, 11, 0.15));
-        }
-
-        .submitted-form {
-            .submit-button {
-                border: none !important;
-                border-top: 1px solid var(--theme-ui-colors-horizontalRule, rgba(8, 8, 11, 0.15)) !important;
-            }
-        }
+    .submitted-input {
+      max-width: calc(100% - 36px);
     }
+
+    .submit-button {
+      position: relative;
+      width: 100%;
+      left: 0;
+      border-radius: 0;
+      height: 60px;
+      border: none;
+      border-top: 1px solid
+        var(--theme-ui-colors-horizontalRule, rgba(8, 8, 11, 0.15));
+    }
+
+    .submitted-form {
+      .submit-button {
+        border: none !important;
+        border-top: 1px solid
+          var(--theme-ui-colors-horizontalRule, rgba(8, 8, 11, 0.15)) !important;
+      }
+    }
+  }
 }
 
 /*TABLET*/
 @media screen and (min-width: $phone_small) and (max-width: $phablet) {
-    .subscription-container {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        border-radius: 4px;
-    }
+  .subscription-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 4px;
+  }
 }
 
 /*PHABLET*/
 @media screen and (max-width: $phablet) {
-    .subscription-container {
-        margin: -20px auto 80px;
-    }
+  .subscription-container {
+    margin: -20px auto 80px;
+  }
 }
 
 .subscription-content {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 640px;
-    text-align: left;
-    @media screen and (max-width: $tablet_pro) {
-        max-width: 500px;
-    }
+  margin: 0 auto;
+  width: 100%;
+  max-width: 640px;
+  text-align: left;
+  @media screen and (max-width: $tablet_pro) {
+    max-width: 500px;
+  }
 }
 
 /*TABLET*/
 @media screen and (max-width: $tablet) {
-    .subscription-content {
-        h3 {
-            padding: 0 50px;
-        }
+  .subscription-content {
+    h3 {
+      padding: 0 50px;
     }
+  }
 }
 
 /*PHONE*/
 @media screen and (max-width: $phone) {
-    .subscription-content {
-        h3 {
-            padding: 0 24px;
-        }
+  .subscription-content {
+    h3 {
+      padding: 0 24px;
     }
+  }
 }
 
 .subscription-heading {
-    font-family: var(--serif-light-italic);
-    margin-bottom: 20px;
+  font-family: var(--sanserif-alt-light-italic);
+  margin-bottom: 20px;
 }
 
 /*TABLET*/
 @media screen and (max-width: $tablet) {
-    .subscription-heading {
-        margin-bottom: 15px;
-    }
+  .subscription-heading {
+    margin-bottom: 15px;
+  }
 }
 
 .subscription-text {
-    margin: 0 0 30px;
-    max-width: 680px;
-    color: var(--grey);
-    line-height: 1.75;
+  margin: 0 0 30px;
+  max-width: 680px;
+  color: var(--grey);
+  line-height: 1.75;
 }
 
 /*TABLET*/
 @media screen and (max-width: $tablet) {
-    .subscription-text {
-        padding: 0 26px;
-        margin: 0 auto 25px;
-    }
+  .subscription-text {
+    padding: 0 26px;
+    margin: 0 auto 25px;
+  }
 }
 
 .subscription-form {
-    position: relative;
+  position: relative;
 }
 
 .subscription-form::after {
-    color: var(--accent);
-    content: "•";
-    position: absolute;
-    left: 21px;
-    top: 14px;
+  color: var(--accent);
+  content: "•";
+  position: absolute;
+  left: 21px;
+  top: 14px;
 }
 
 /*TABLET*/
 @media screen and (max-width: $tablet) {
-    .subscription-form:after {
-        left: 34px;
-        top: 11px;
-    }
+  .subscription-form:after {
+    left: 34px;
+    top: 11px;
+  }
 }
 
 .subscription-input {
-    position: relative;
-    border-radius: 35px;
-    border: none;
-    padding: 13px 21px 13px 35px;
-    width: 471px;
-    color: var(--primary);
-    background-color: var(--inputBackground);
-    font-family: var(--sanserif);
+  position: relative;
+  border-radius: 35px;
+  border: none;
+  padding: 13px 21px 13px 35px;
+  width: 471px;
+  color: var(--primary);
+  background-color: var(--inputBackground);
+  font-family: var(--sanserif);
 }
 
 .subscription-input.submitted-input:invalid {
-    position: relative;
-    background: var(--theme-ui-colors-errorBackground, rgba(238, 86, 91, 0.1)) !important;
-    border-radius: 35px;
-    border: none;
-    padding: 13px 21px 13px 35px;
-    width: 471px;
-    color: var(--primary, #000);
-    outline: none !important;
+  position: relative;
+  background: var(
+    --theme-ui-colors-errorBackground,
+    rgba(238, 86, 91, 0.1)
+  ) !important;
+  border-radius: 35px;
+  border: none;
+  padding: 13px 21px 13px 35px;
+  width: 471px;
+  color: var(--primary, #000);
+  outline: none !important;
 }
 
 input:invalid {
-    -webkit-box-shadow: 0 0 2px 1px transparent;
-    box-shadow: 0 0 2px 1px transparent;
+  -webkit-box-shadow: 0 0 2px 1px transparent;
+  box-shadow: 0 0 2px 1px transparent;
 }
 
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
 
-.subscription-input.submitted-input:invalid~.subscription-error-message {
-    opacity: 1;
+.subscription-input.submitted-input:invalid ~ .subscription-error-message {
+  opacity: 1;
 }
 
-.subscription-input.submitted-input:invalid~.submit-button {
-    color: var(--error);
-    border: 1px solid var(--error);
+.subscription-input.submitted-input:invalid ~ .submit-button {
+  color: var(--error);
+  border: 1px solid var(--error);
 }
 
 .submitted-form:after {
-    color: var(--error);
+  color: var(--error);
 }
 
 .subscription-error-message {
-    position: absolute;
-    left: 35px;
-    bottom: -20px;
-    color: var(--theme-ui-colors-error, #EE565B);
-    font-size: 12px;
-    opacity: 0;
+  position: absolute;
+  left: 35px;
+  bottom: -20px;
+  color: var(--theme-ui-colors-error, #ee565b);
+  font-size: 12px;
+  opacity: 0;
 }
 
 .subscription-input::-webkit-input-placeholder {
-    color: var(--track);
-    opacity: 1;
+  color: var(--track);
+  opacity: 1;
 }
 
 .subscription-input::-moz-placeholder {
-    color: var(--track);
-    opacity: 1;
+  color: var(--track);
+  opacity: 1;
 }
 
 .subscription-input:-ms-input-placeholder {
-    color: var(--track);
-    opacity: 1;
+  color: var(--track);
+  opacity: 1;
 }
 
 .subscription-input::-ms-input-placeholder {
-    color: var(--track);
-    opacity: 1;
+  color: var(--track);
+  opacity: 1;
 }
 
 .subscription-input::placeholder {
-    color: var(--track);
-    opacity: 1;
+  color: var(--track);
+  opacity: 1;
 }
 
 .subscription-input:-ms-input-placeholder {
-    color: var(--track);
+  color: var(--track);
 }
 
 .subscription-input::-ms-input-placeholder {
-    color: var(--track);
+  color: var(--track);
 }
 
 /*TABLET*/
 @media screen and (max-width: 735px) {
-    .subscription-input {
-        width: calc(100% - 36px);
-        margin: 0 18px;
-        padding: 14px 14px 14px 30px;
-        margin-bottom: 30px;
-    }
+  .subscription-input {
+    width: calc(100% - 36px);
+    margin: 0 18px;
+    padding: 14px 14px 14px 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .submit-button {
-    border: 1.5px solid var(--accent);
-    color: var(--accent);
-    background: var(--card);
-    position: absolute;
-    left: 306px;
-    top: 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 161px;
-    height: 38px;
-    font-weight: 100;
-    border-radius: 35px;
-    letter-spacing: 0.42px;
-    -webkit-transition: border-color 0.2s var(--ease-in-out-quad),
-        background 0.2s var(--ease-in-out-quad), color 0.2s var(--ease-in-out-quad);
-    -o-transition: border-color 0.2s var(--ease-in-out-quad),
-        background 0.2s var(--ease-in-out-quad), color 0.2s var(--ease-in-out-quad);
-    transition: border-color 0.2s var(--ease-in-out-quad),
-        background 0.2s var(--ease-in-out-quad), color 0.2s var(--ease-in-out-quad);
+  border: 1.5px solid var(--accent);
+  color: var(--accent);
+  background: var(--card);
+  position: absolute;
+  left: 306px;
+  top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 161px;
+  height: 38px;
+  font-weight: 100;
+  border-radius: 35px;
+  letter-spacing: 0.42px;
+  -webkit-transition: border-color 0.2s var(--ease-in-out-quad),
+    background 0.2s var(--ease-in-out-quad), color 0.2s var(--ease-in-out-quad);
+  -o-transition: border-color 0.2s var(--ease-in-out-quad),
+    background 0.2s var(--ease-in-out-quad), color 0.2s var(--ease-in-out-quad);
+  transition: border-color 0.2s var(--ease-in-out-quad),
+    background 0.2s var(--ease-in-out-quad), color 0.2s var(--ease-in-out-quad);
 
-    font-family: var(--serif-heavy-italic);
+  font-family: var(--sanserif-alt-heavy-italic);
+  font-weight: 500;
 
-    &:hover {
-        background: var(--accent);
-        color: var(--card);
-    }
+  &:hover {
+    background: var(--accent);
+    color: var(--card);
+  }
 }
 
 .submit-button:disabled {
-    cursor: not-allowed;
+  cursor: not-allowed;
 }
 
 .submit-button svg * {
-    fill: var(--background-color);
+  fill: var(--background-color);
 }
 
 .submit-error {
-    position: absolute;
-    left: 35px;
-    bottom: -20px;
-    color: var(--error);
-    font-size: 12px;
+  position: absolute;
+  left: 35px;
+  bottom: -20px;
+  color: var(--error);
+  font-size: 12px;
 }
 
 .submit-error a {
-    color: var (--error);
-    text-decoration: underline;
+  color: var (--error);
+  text-decoration: underline;
 }
 
 /*TABLET*/
 @media screen and (max-width: $tablet) {
-    .submit-error {
-        left: 50px;
-        top: 50px;
-    }
+  .submit-error {
+    left: 50px;
+    top: 50px;
+  }
 }

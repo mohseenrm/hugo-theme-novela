@@ -9,55 +9,61 @@ $desktop_medium: 1280px;
 $desktop_large: 1440px;
 $desktop_4k: 3800px;
 
-body{
+body {
     /*FONTS*/
-    --serif: "Futura Md", "Merriweather", Georgia, Serif;
-    --sanserif: "Nunito Sans", "SF Pro Display", "-apple-system", "BlinkMacSystemFont", "San Francisco", "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto", "Segoe UI", "Arial", sans-serif;
-    --monospace: "Operator Mono", Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
+    --sanserif-alt: "Montserrat", "Merriweather", Georgia, sans-serif;
+    --sanserif: "Nunito Sans", "SF Pro Display", "-apple-system",
+        "BlinkMacSystemFont", "San Francisco", "Helvetica Neue", "Helvetica",
+        "Ubuntu", "Roboto", "Noto", "Segoe UI", "Arial", sans-serif;
+    --monospace: "Operator Mono", Consolas, Menlo, Monaco, source-code-pro,
+        Courier New, monospace;
 
-    --serif-bold-italic: "Futura BI", --serif;
-    --serif-light-italic: "Futura LC", --serif;
-    --serif-medium-italic: "Futura MI", --serif;
-    --serif-heavy-italic: "Futura HI", --serif;
-    --serif-regular: "Futura Md", --serif;
-    --serif-light: "Futura L", --serif;
+    --sanserif-alt-bold-italic: "Montserrat", --sanserif-alt;
+    --sanserif-alt-light-italic: "Montserrat", --sanserif-alt;
+    --sanserif-alt-medium-italic: "Montserrat", --sanserif-alt;
+    --sanserif-alt-heavy-italic: "Montserrat", --sanserif-alt;
+    --sanserif-alt-regular: "Montserrat", --sanserif-alt;
+    --sanserif-alt-light: "Montserrat", --sanserif-alt;
 
     /*COLOR MODE TRANSITION*/
-    --color-mode-transition: background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad);
+    --color-mode-transition: background 0.25s var(--ease-in-out-quad),
+        color 0.25s var(--ease-in-out-quad);
 
     /*PRIMARY COLORS*/
     --primary: #000;
-    --secondary: #73737D;
-    --grey: #73737D;
+    --secondary: #73737d;
+    --grey: #73737d;
     --background-color: #fafafa;
     --accent: #006ed0;
     --hover: rgba(0, 0, 0, 0.07);
-    --gradient: linear-gradient(180deg, rgba(217, 219, 224, 0) 0%, #D9DBE0 100%);
-    --articleText: #08080B;
+    --gradient: linear-gradient(180deg, rgba(217, 219, 224, 0) 0%, #d9dbe0 100%);
+    --articleText: #08080b;
     --track: rgba(8, 8, 11, 0.3);
     --progress: #000;
     --card: #fff;
-    --error: #EE565B;
-    --success: #46B17B;
+    --error: #ee565b;
+    --success: #46b17b;
     --errorBackground: rgba(238, 86, 91, 0.1);
     --horizontalRule: rgba(8, 8, 11, 0.15);
     --inputBackground: rgba(0, 0, 0, 0.05);
     --tooltip: lightgrey;
 
     /*DARK COLORS*/
-    --dark-grey: #73737D;
+    --dark-grey: #73737d;
     --dark-primary: #fff;
     --dark-secondary: #fff;
-    --dark-accent: #E9DAAC;
+    --dark-accent: #e9daac;
     --dark-background: #111216;
     --dark-hover: rgba(255, 255, 255, 0.07);
-    --dark-gradient: linear-gradient(180deg, #111216 0%, rgba(66, 81, 98, 0.36) 100%);
+    --dark-gradient: linear-gradient(180deg,
+            #111216 0%,
+            rgba(66, 81, 98, 0.36) 100%);
     --dark-articleText: #fff;
     --dark-track: rgba(255, 255, 255, 0.3);
     --dark-progress: #fff;
-    --dark-card: #1D2128;
-    --dark-error: #EE565B;
-    --dark-success: #46B17B;
+    --dark-card: #1d2128;
+    --dark-error: #ee565b;
+    --dark-success: #46b17b;
     --dark-errorBackground: rgba(238, 86, 91, 0.1);
     --dark-horizontalRule: rgba(255, 255, 255, 0.15);
     --dark-inputBackground: rgba(255, 255, 255, 0.07);
@@ -78,32 +84,32 @@ body{
     --tag: #e8696b;
     --keyword: #d49fd4;
     --boolean: #ff5874;
-    --function: #5F8DC3;
-    --parameter: #F9965D;
+    --function: #5f8dc3;
+    --parameter: #f9965d;
     --className: #ffcf74;
     --attrName: #bf87ba;
     --attrValue: #a8e2a8;
     --interpolation: #fff;
-    --punctuation: #5FA8AA;
+    --punctuation: #5fa8aa;
     --property: #80cbc4;
     --propertyAccess: #fff;
     --namespace: #b2ccd6;
-    --highlight: rgba(255,255,255,0.07);
+    --highlight: rgba(255, 255, 255, 0.07);
     --highlightBorder: #e1bde2;
-    --dom: #5F8DC3;
-    --operator: #5FA8AA;
+    --dom: #5f8dc3;
+    --operator: #5fa8aa;
 
     /* Custom colors */
-    --twilio-red: #F22F46;
+    --twilio-red: #f22f46;
     --beautylish-black: #1d1e22;
     --cyr3con: #1b1f38;
     --gitkraken: #128379;
-    --asu-maroon: #8C1D40;
+    --asu-maroon: #8c1d40;
     --barclays: #00aeef;
     --card-background: #ffffff;
     --card-header: #2e3c40;
     --card-subtitle: #627084;
-    --card-text: #1D2128;
+    --card-text: #1d2128;
     --highlight-block: #b3fdf6d4;
     --mint-green: #39e0cf;
 }
