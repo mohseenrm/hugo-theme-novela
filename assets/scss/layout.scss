@@ -5,4 +5,5 @@
     -o-transition: var(--color-mode-transition);
     transition: var(--color-mode-transition);
     min-height: 100vh;
+    max-width: 100vw;
 }
