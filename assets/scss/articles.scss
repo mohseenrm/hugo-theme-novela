@@ -343,20 +343,27 @@
   overflow: hidden;
   position: relative;
   height: 280px;
-  -webkit-box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.22),
+  -webkit-box-shadow:
+    0 30px 60px -10px rgba(0, 0, 0, 0.22),
     0 18px 36px -18px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.22),
+  box-shadow:
+    0 30px 60px -10px rgba(0, 0, 0, 0.22),
     0 18px 36px -18px rgba(0, 0, 0, 0.25);
   margin-bottom: 30px;
-  -webkit-transition: -webkit-transform 0.3s var(--ease-out-quad),
+  -webkit-transition:
+    -webkit-transform 0.3s var(--ease-out-quad),
     -webkit-box-shadow 0.3s var(--ease-out-quad);
-  transition: -webkit-transform 0.3s var(--ease-out-quad),
+  transition:
+    -webkit-transform 0.3s var(--ease-out-quad),
     -webkit-box-shadow 0.3s var(--ease-out-quad);
-  -o-transition: transform 0.3s var(--ease-out-quad),
+  -o-transition:
+    transform 0.3s var(--ease-out-quad),
     box-shadow 0.3s var(--ease-out-quad);
-  transition: transform 0.3s var(--ease-out-quad),
+  transition:
+    transform 0.3s var(--ease-out-quad),
     box-shadow 0.3s var(--ease-out-quad);
-  transition: transform 0.3s var(--ease-out-quad),
+  transition:
+    transform 0.3s var(--ease-out-quad),
     box-shadow 0.3s var(--ease-out-quad),
     -webkit-transform 0.3s var(--ease-out-quad),
     -webkit-box-shadow 0.3s var(--ease-out-quad);
@@ -446,8 +453,8 @@
 .article-metadata {
   font-weight: 600;
   font-size: 16px;
-  color: var(--grey);
-  opacity: 0.33;
+  color: var(--primary);
+  opacity: 0.5;
 
   /*PHABLET*/
   @media screen and (max-width: $phablet) {
@@ -513,7 +520,8 @@
   transition: -webkit-transform 0.33s var(--ease-out-quart);
   -o-transition: transform 0.33s var(--ease-out-quart);
   transition: transform 0.33s var(--ease-out-quart);
-  transition: transform 0.33s var(--ease-out-quart),
+  transition:
+    transform 0.33s var(--ease-out-quart),
     -webkit-transform 0.33s var(--ease-out-quart);
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 
@@ -526,9 +534,11 @@
     -webkit-transform: translateY(-1px);
     -ms-transform: translateY(-1px);
     transform: translateY(-1px);
-    -webkit-box-shadow: 0 50px 80px -20px rgba(0, 0, 0, 0.27),
+    -webkit-box-shadow:
+      0 50px 80px -20px rgba(0, 0, 0, 0.27),
       0 30px 50px -30px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 50px 80px -20px rgba(0, 0, 0, 0.27),
+    box-shadow:
+      0 50px 80px -20px rgba(0, 0, 0, 0.27),
       0 30px 50px -30px rgba(0, 0, 0, 0.3);
   }
 
